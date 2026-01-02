@@ -40,6 +40,8 @@ After using this lab, learners will understand:
    uv run chainlit run app.py
    ```
 
+   **Note:** The first run may take a while as dependencies are downloaded and installed.
+   
    The application will start and open in your browser automatically.
 
 ![Chat UI](Assets/chat_UI.jpg)
@@ -63,7 +65,7 @@ After using this lab, learners will understand:
 
 ### Switching Modes
 
-Use the toggle button in the sidebar settings to switch between modes.
+Use the toggle button in the settings to switch between modes.
 
 ![Settings Button](Assets/setting_button.jpg)
 

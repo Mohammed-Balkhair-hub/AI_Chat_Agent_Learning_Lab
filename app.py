@@ -37,7 +37,7 @@ async def start():
     
     # Welcome message
     await cl.Message(
-        content="Welcome to AI Agent Explorer! Use the toggle in the sidebar to switch between Basic LLM and Agent Mode."
+        content="Welcome to AI Agent Explorer! Use the toggle in the settings to switch between Basic LLM and Agent Mode."
     ).send()
 
 
