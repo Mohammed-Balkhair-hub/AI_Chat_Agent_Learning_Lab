@@ -1,10 +1,10 @@
 # AI Agent Explorer - Learning Lab
 
-A minimal, transparent Python application designed to teach students the difference between a standard LLM and an Agent. This learning repository demonstrates how tools, reasoning loops, and "memory" work in AI systems.
+A minimal, transparent Python application designed to help learners understand the difference between a standard LLM and an Agent. This learning repository demonstrates how tools, reasoning loops, and "memory" work in AI systems.
 
 ## 🎯 Learning Objectives
 
-After using this lab, students will understand:
+After using this lab, learners will understand:
 
 1. **The Stateless Nature of LLMs**: See how "memory" is just a list of text messages passed to the model
 2. **Tools as Python Functions**: Learn that agent "tools" are simply Python functions with descriptive docstrings
@@ -126,7 +126,7 @@ This repository is designed to be "bomb-proof" - meaning:
 - Clear separation of concerns (UI, agent logic, tools)
 - Terminal logging shows exactly what's happening under the hood
 
-Students can read the code and understand:
+Learners can read the code and understand:
 - How message history is maintained
 - How tools are defined and called
 - How the agent decides when to use tools
