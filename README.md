@@ -67,6 +67,10 @@ After using this lab, learners will understand:
 
 Use the toggle button in the settings to switch between modes.
 
+> **⚠️ Important:** When you switch between modes, the conversation context will be reset. This means previous messages in the current mode will not be available after switching.
+
+> **💡 Cost-Saving Tip:** If you want to ask a question that doesn't need thinking and tooling, please close the Agent Mode to save tokens as it costs too much. Use Basic LLM Mode for simple conversational questions.
+
 ![Settings Button](Assets/setting_button.jpg)
 
 ![Switch to Agent Mode](Assets/switch_to_agent_mode.jpg)
