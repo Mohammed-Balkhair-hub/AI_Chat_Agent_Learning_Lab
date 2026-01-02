@@ -1,0 +1,17 @@
+[project]
+name = "agent-explorer-lab"
+version = "0.1.0"
+description = "A teaching lab for LLMs and Agents"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "smolagents>=1.0.0",
+    "chainlit>=1.2.0",
+    "python-dotenv>=1.0.1",
+    "openai>=1.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.1.0",
+]
