@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 .chainlit/
 uv.lock
+.DS_Store
