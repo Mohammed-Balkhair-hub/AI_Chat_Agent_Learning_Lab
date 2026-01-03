@@ -1,14 +1,14 @@
 # Customization Guide
 
-This guide explains how to customize the AI Agent Explorer by adding new tools or changing the LLM model.
+This guide explains how to customize the **UI version** of AI Agent Explorer (in the `App/` folder) by adding new tools or changing the LLM model.
 
 ## 🛠️ Adding a New Tool
 
 Tools are simple Python functions decorated with `@tool`. Here's how to add your own:
 
-### Step 1: Open `tools.py`
+### Step 1: Open `App/tools.py`
 
-All tools are defined in the `tools.py` file.
+All tools are defined in the `App/tools.py` file.
 
 ### Step 2: Add Your Tool Function
 
@@ -33,9 +33,9 @@ def your_tool_name(parameter: type) -> str:
     return str(result)
 ```
 
-### Step 3: Import Your Tool in `agent.py`
+### Step 3: Import Your Tool in `App/agent.py`
 
-Open `agent.py` and find line 12 (the imports section):
+Open `App/agent.py` and find line 12 (the imports section):
 
 ```python
 from tools import magic_calculator, time_checker
@@ -65,7 +65,7 @@ tools = [magic_calculator, time_checker, your_tool_name]
 
 Here's a complete example:
 
-**In `tools.py` (add after line 54):**
+**In `App/tools.py` (add after line 54):**
 ```python
 @tool
 def weather_checker(city: str) -> str:
@@ -84,12 +84,12 @@ def weather_checker(city: str) -> str:
     return f"The weather in {city} is sunny, 72°F"
 ```
 
-**In `agent.py` line 12:**
+**In `App/agent.py` line 12:**
 ```python
 from tools import magic_calculator, time_checker, weather_checker
 ```
 
-**In `agent.py` line 112:**
+**In `App/agent.py` line 112:**
 ```python
 tools = [magic_calculator, time_checker, weather_checker]
 ```
@@ -100,9 +100,9 @@ That's it! Your new tool is now available in Agent Mode.
 
 ## 🤖 Changing the LLM Model
 
-The LLM model is configured in the `get_model()` function in `agent.py`.
+The LLM model is configured in the `get_model()` function in `App/agent.py`.
 
-### Step 1: Open `agent.py`
+### Step 1: Open `App/agent.py`
 
 ### Step 2: Find the Model Configuration
 
@@ -162,11 +162,11 @@ def get_model() -> OpenAIModel:
 ## 📝 Summary
 
 **To add a tool:**
-1. Add function in `tools.py` with `@tool` decorator
-2. Import it in `agent.py` line 12
-3. Add it to the tools list in `agent.py` line 112
+1. Add function in `App/tools.py` with `@tool` decorator
+2. Import it in `App/agent.py` line 12
+3. Add it to the tools list in `App/agent.py` line 112
 
 **To change the model:**
-1. Edit `model_id` in `agent.py` line 34
+1. Edit `model_id` in `App/agent.py` line 34
 
 That's all you need to customize the AI Agent Explorer!
